@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+    {% block content %}
+    <h1>Inventory</h1>
+    <ul>
+            <span>
+              <span>
+                <table>
+                  <tr>
+                    <th>Copy ID</th>
+                    <th>Book ID</th>
+                  </tr>
+    {% for book in copies %}
+
+            <td>{{book.book_id}}</td>
+            <td>{{book.book_quantity}}</td>
+            </tr>
+          </span>
+        </span>
+      </ul>
+      {% endfor %}
+      </table>
+</ul>

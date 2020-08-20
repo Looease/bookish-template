@@ -1,5 +1,44 @@
 ﻿﻿{% extends "_base.html" %}
 
 {% block content %}
-<p>Hello {{ message }}</p>
+<h1>Welcome to Bookish {{ message }}</h1>
+<span>
+<form method="get" action="/book">
+<h3>Quick Book Search</h3>
+<br>
+<label for="bookName">Book Name</label>
+<br>
+<input type="text" id="bookName" name="bookName">
+<br>
+<label for="authorName">Author Name</label>
+<br>
+<input type="text" id="authorName" name="authorName">
+<br><br>
+<button type="submit" value="Submit">       
+    Search
+    </button>
+</form>
+
+<form method="get" action="/member">
+    <h3>Quick Member Search</h3>
+    <br>
+    <label for="first_name">First Name</label>
+    <br>
+    <input type="text" id="first_name" name="first_name">
+    <br>
+    <label for="last_name">Last Name</label>
+    <br>
+    <input type="text" id="last_name" name="last_name">
+    <br><br>
+    <button type="submit" value="Submit">       
+    Search
+    </button>
+    </form>
+    
+
+
+
+</span>
 {% endblock %}
+
+

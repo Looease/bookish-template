@@ -1,0 +1,50 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<h1>Manage Books</h1>
+<span>
+<form method="POST" action="/book/manage" class="manageBook">
+    Add Book
+    <br>
+    <label for="bookId">Book ID</label>
+    <br>
+    <input type="text" id="bookId" name="bookId" value="">
+    <br>
+    <label for="bookName">Book Name</label>
+    <br>
+    <input type="text" id="bookName" name="bookName" value="">
+    <br>
+    <label for="authorName">Author Name</label>
+    <br>
+    <input type="text" id="authorName" name="authorName" value="">
+    <br>
+    <label for="quantity">Book Quantity</label>
+    <br>
+    <input type="text" id="quantity" name="quantity" value="">
+    <button type="submit" value="Add">
+        Add
+    </button>
+  </form> 
+
+<form method="POST" action="/book/remove" class="manageBook">
+    Delete Book
+    <br>
+    <label for="bookId">Book ID</label>
+    <br>
+    <input type="text" id="bookId" name="bookId" value="">
+    <br>
+    <button type="submit" value="Delete">       
+       Delete
+        </button>
+  </form> 
+
+</span>
+
+
+
+
+
+
+
+
+{% endblock %}

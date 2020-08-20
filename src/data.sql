@@ -25,6 +25,9 @@ CREATE TABLE IF NOT EXISTS book (
     book_quantity       int not null
     );
 
+    ALTER TABLE book 
+    ADD COLUMN deleted boolean not null DEFAULT false;
+
 INSERT INTO member (member_id, first_name, last_name)
 VALUES
 (234, 'Perla', 'Kincey'),

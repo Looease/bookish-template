@@ -1,0 +1,43 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<h1>Manage Members</h1>
+<span>
+    <form method="POST" action="/member/manage" class="manageBook">
+       <h1> Add Member</h1>
+        <br>
+        <label for="member_id">Member ID</label>
+        <br>
+        <input type="text" id="member_id" name="member_id" value="">
+        <br>
+        <label for="first_name">First Name</label>
+        <br>
+        <input type="text" id="first_name" name="first_name" value="">
+        <br>
+        <label for="last_name">Last Name</label>
+        <br>
+        <input type="text" id="last_name" name="last_name" value="">
+        <br>
+        <button type="submit" value="Submit">       
+            Add
+            </button>
+      </form> 
+
+      <form method="POST" action="/book/remove" class="manageBook">
+        Delete Member
+        <br>
+        <label for="bookId">Member ID</label>
+        <br>
+        <input type="text" id="bookId" name="bookId" value="">
+        <br>
+        <button type="submit" value="Delete">       
+           Delete
+            </button>
+      </form> 
+
+
+</span>   
+
+
+
+{% endblock %}
